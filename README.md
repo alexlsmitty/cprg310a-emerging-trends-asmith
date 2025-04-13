@@ -1,29 +1,128 @@
-# .
+# TransFusion 🚀 - Framework Translation Made Easy
 
-This template should help get you started developing with Vue 3 in Vite.
+![TransFusion Logo](https://via.placeholder.com/800x400?text=TransFusion)
 
-## Recommended IDE Setup
+## 🌟 What is TransFusion?
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+TransFusion is an AI-powered code translation tool that helps developers convert their codebase from one frontend framework to another. Whether you're migrating from React to Vue, Angular to React, or any other supported framework combination, TransFusion makes the process smoother and more efficient.
 
-## Customize configuration
+## ✨ Why Large Language Models (LLMs)?
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+We chose to integrate Large Language Models as the core technology behind TransFusion for several compelling reasons:
 
-## Project Setup
+- 🧠 **Contextual Understanding**: LLMs can understand code semantics and patterns beyond simple syntax transformations
+- 🔄 **Adaptability**: They can translate between multiple frameworks without requiring specific rule-sets for each pair
+- 📊 **Framework-Specific Knowledge**: Models have been trained on vast repositories of code across frameworks
+- 🛠️ **Continuous Improvement**: As models evolve, translation quality improves without requiring app rewrites
 
-```sh
+LLMs provide a powerful and relatively flexible method of code generation which can be utilized more easily once set up in frameworks that can be automated. This approach scales much better than traditional rule-based converters.
+
+## 🎁 Benefits of LLM-Powered Code Translation
+
+- **Reduced Migration Time**: What might take weeks can be done in hours, with developers focusing on fine-tuning rather than rewriting
+- **Lower Error Rates**: Systematic translation avoids human oversight errors in large migrations
+- **Framework Experimentation**: Try your app in different frameworks without commitment
+- **Knowledge Preservation**: Code patterns, custom logic, and architectural decisions are preserved across translations
+- **Learning Tool**: Developers can learn new frameworks by seeing equivalent implementations of familiar code
+
+## 🔧 How We Integrated LLMs
+
+TransFusion uses a sophisticated pipeline to handle code translation:
+
+1. **Repository Analysis**: We analyze your codebase to understand dependencies and structure
+2. **Context-Aware Prompting**: We construct specialized prompts that include file dependencies and project context
+3. **Queue Management**: Requests are managed through a robust queue system with rate limiting and fallbacks
+4. **Multi-Provider Strategy**: We support multiple LLM providers with automated fallback for reliability
+5. **Streaming Response Processing**: Results are streamed for better UX and to handle large files
+6. **Post-Processing**: Generated code is cleaned and formatted for consistency
+
+This integration enhances the translation process by making it more reliable, accurate and context-aware compared to rule-based translation systems.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+- An API key from OpenRouter.ai or another supported LLM provider
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/transfusion.git
+cd transfusion
+
+# Install dependencies
 npm install
+# or
+yarn
 ```
 
-### Compile and Hot-Reload for Development
+### Configuration
 
-```sh
+
+### Running Locally
+
+```bash
+# Start the development server
 npm run dev
+# or
+yarn dev
 ```
 
-### Compile and Minify for Production
+Then navigate to `http://localhost:5173` in your browser.
 
-```sh
-npm run build
-```
+## 🧪 Testing the Application
+
+1. **Upload Files**: Start by selecting your source and target frameworks, then upload your project files
+2. **Review Analysis**: Review the file analysis to ensure all components are detected
+3. **Configure Options**: Set framework-specific options like TypeScript support
+4. **Start Translation**: Enter your API key and start the translation process
+5. **Download Results**: Once complete, review the results and download the translated files
+
+For testing without an API key, you can use the included sample files located in the `/samples` directory.
+
+## ⚙️ Supported Frameworks
+
+- **React** (v16, v17, v18)
+- **Vue.js** (v2, v3)
+- **Angular** (v13+)
+- **Svelte** (v3, v4)
+- **Next.js** (v12+)
+- **Nuxt** (v2, v3)
+
+## 🧩 Key Features
+
+- 🔍 **Intelligent Project Analysis**: Automatically detects and maps components, dependencies, and structure
+- ⚡ **Parallel Processing**: Translates multiple files concurrently for speed
+- 🔄 **Framework-Specific Adaptations**: Automatically adjusts code to follow target framework best practices
+- 📈 **Detailed Reports**: Get architecture recommendations and translation decisions
+- 🛡️ **Privacy-Focused**: All code processing happens locally in your browser until translation
+
+## 📝 Known Limitations
+
+- Complex state management patterns might require manual adjustment after translation
+- Very large projects might face rate limiting with free API keys
+- Custom build configurations need to be manually adapted for the target framework
+- Current configuration can often lead to long responses from LLMs, and code generated by the LLMs is not guaranteed to work. However, it will typically generate a number of different options for the component as a result, so this is at least workable.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgements
+
+- This project uses the OpenRouter API to connect to various LLM providers
+- Built with Vue.js and Vite
+- Icons provided by Lucide
+
+---
+
+⭐ If you find this project helpful, please consider giving it a star on GitHub! ⭐
