@@ -1,0 +1,11 @@
+<template>
+    <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M28.8025 47.7439L11.9275 30.8689L28.8025 13.9939M14.2712 30.8689H41.8039" stroke="black" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </template>
+  
+  <script>
+  export default {
+    name: 'ArrowIcon'
+  }
+  </script>
