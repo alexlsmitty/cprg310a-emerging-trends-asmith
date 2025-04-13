@@ -1,7 +1,5 @@
 # TransFusion 🚀 - Framework Translation Made Easy
 
-![TransFusion Logo](https://via.placeholder.com/800x400?text=TransFusion)
-
 ## 🌟 What is TransFusion?
 
 TransFusion is an AI-powered code translation tool that helps developers convert their codebase from one frontend framework to another. Whether you're migrating from React to Vue, Angular to React, or any other supported framework combination, TransFusion makes the process smoother and more efficient.
